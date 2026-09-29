@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nestock — Delete Your Account</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1c1c1e;
+    --muted: #6b6b70;
+    --accent: #5b4fe9;
+    --border: #e5e5ea;
+    --card: #f7f7f9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121214;
+      --text: #f2f2f3;
+      --muted: #a1a1a6;
+      --accent: #8b7fff;
+      --border: #2c2c2e;
+      --card: #1c1c1e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 20px 80px;
+  }
+  h1 {
+    font-size: 28px;
+    margin-bottom: 4px;
+  }
+  .updated {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+  h2 {
+    font-size: 19px;
+    margin-top: 40px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 8px;
+  }
+  p, li {
+    font-size: 16px;
+  }
+  ul {
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin: 24px 0;
+  }
+  a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 15px;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  th {
+    color: var(--muted);
+    font-weight: 600;
+  }
+  footer {
+    margin-top: 56px;
+    color: var(--muted);
+    font-size: 14px;
+    border-top: 1px solid var(--border);
+    padding-top: 20px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Delete Your Nestock Account</h1>
+  <div class="updated">Last updated: September 29, 2026</div>
+
+  <p>
+    This page explains how to delete your Nestock ("HomeStock") account and
+    the data associated with it. Developer: Nikita Rysin Studio.
+  </p>
+
+  <h2>Option 1: Delete inside the app (recommended)</h2>
+  <ol>
+    <li>Open the Nestock app and go to the <strong>Profile</strong> tab.</li>
+    <li>Tap <strong>Delete account</strong> ("Удалить аккаунт").</li>
+    <li>Confirm the deletion. If you signed in with Apple, you will be asked to confirm with Apple once more.</li>
+  </ol>
+  <p>Deletion happens immediately and cannot be undone.</p>
+
+  <h2>Option 2: Request deletion by email</h2>
+  <p>
+    If you can no longer access the app, email
+    <a href="mailto:nikita.rysin.studio@gmail.com?subject=Nestock%20account%20deletion">nikita.rysin.studio@gmail.com</a>
+    from the address linked to your account (or tell us the name and email
+    shown on your Google/Apple account). We will delete your account and data
+    within 30 days.
+  </p>
+
+  <h2>What is deleted</h2>
+  <table>
+    <tr><th>Data</th><th>What happens</th></tr>
+    <tr><td>Your profile (name, email, profile photo)</td><td>Deleted</td></tr>
+    <tr><td>Your sign-in account (Google / Apple / guest)</td><td>Deleted; for Apple, the sign-in token is also revoked</td></tr>
+    <tr><td>Push notification tokens</td><td>Deleted</td></tr>
+    <tr><td>Invite codes you created</td><td>Deleted</td></tr>
+    <tr><td>Shared lists where you are the only member (items, photos, comments, history)</td><td>Deleted completely</td></tr>
+    <tr><td>Shared lists that have other members</td><td>You are removed from the list and it stays with the remaining members. If you were the owner, ownership passes to another member.</td></tr>
+    <tr><td>Comments and change history you wrote in lists that remain</td><td>Kept, but your name is replaced with "Deleted user"</td></tr>
+  </table>
+
+  <p>
+    Backups made by our infrastructure provider (Google Firebase) may retain
+    deleted data for a short period before being purged. See our
+    <a href="../privacy_policy/">Privacy Policy</a> for details.
+  </p>
+
+  <footer>
+    Nestock — Delete Your Account
+  </footer>
+
+</div>
+</body>
+</html>
